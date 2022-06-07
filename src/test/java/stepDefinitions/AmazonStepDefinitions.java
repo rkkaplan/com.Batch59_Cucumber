@@ -62,6 +62,36 @@ public class AmazonStepDefinitions {
         Assert.assertTrue(actualResultsText.contains(expectedWord));
 
     }
+    @Given("kullanici {string} icin arama yapar")
+    public void kullanici_icin_arama_yapar(String istenenKelime) {
+        amazonPage.searchBoxElement.sendKeys(istenenKelime + Keys.ENTER);
+    }
+    @Given("sonuclarin {string} icerdigini test eder")
+    public void sonuclarin_icerdigini_test_eder(String istenenKelime) {
+        String actualResultsText = amazonPage.searchResultsElement.getText();
+        String expectedWord = istenenKelime;
+        Assert.assertTrue(actualResultsText.contains(expectedWord));
+
+    }
 
 
+    @Given("kullanici {string} ana sayfasinda")
+    public void kullaniciAnaSayfasinda(String istenenUrl) {
+        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
+    }
+
+    @And("url'in {string} icerdigini test eder")
+    public void urlInIcerdiginiTestEder(String istenenKelime) {
+        String actualUrl = Driver.getDriver().getCurrentUrl();
+        Assert.assertTrue(actualUrl.contains(istenenKelime));
+    }
+
+    @Then("kullanici {int} sn bekler")
+    public void kullaniciSnBekler(int istenenSaniye) {
+        try {
+            Thread.sleep(istenenSaniye*1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
 }
