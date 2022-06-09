@@ -1,4 +1,5 @@
 Feature: US1008 yanlis bilgiler ile giris yapilamaz
+  @HMC
   Scenario Outline: TC13 yanlis kullanici adi ve sifrelerle giris yapilamaz
 
     Given kullanici "HMCUrl" ana sayfasinda

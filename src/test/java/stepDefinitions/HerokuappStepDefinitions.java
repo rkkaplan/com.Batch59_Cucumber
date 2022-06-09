@@ -42,7 +42,7 @@ public class HerokuappStepDefinitions {
 
     @Then("Delete butonunun gorunmedigini test eder")
     public void delete_butonunun_gorunmedigini_test_eder() {
-        Assert.assertFalse(herokuappPage.deleteElementButton.isDisplayed());
+        Assert.assertTrue(herokuappPage.deleteElementsButtons.isEmpty());
 
     }
 
