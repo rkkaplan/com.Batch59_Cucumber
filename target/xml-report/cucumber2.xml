@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="92.731">
+    <testcase classname="US1001 Amazon Search" name="TC01 kullanici amazonda Nutella aratir" time="21.392">
+        <system-out>
+            <![CDATA[Given kullanici amazon ana sayfasinda.......................................passed
+Then kullanici Nutella icin arama yapar.....................................passed
+And sonuclarin Nutella icerdigini test eder.................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1001 Amazon Search" name="TC02 kullanici amazonda Java aratir" time="19.601">
+        <system-out>
+            <![CDATA[Given kullanici amazon ana sayfasinda.......................................passed
+Then kullanici Java icin arama yapar........................................passed
+And sonuclarin Java icerdigini test eder....................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1001 Amazon Search" name="TC03 kullanici amazonda iphone aratir" time="16.294">
+        <system-out>
+            <![CDATA[When kullanici amazon ana sayfasinda........................................passed
+And kullanici iphone icin arama yapar.......................................passed
+Then sonuclarin iphone icerdigini test eder.................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1002 Kullanici ortak adimlari Background ile calistirir" name="TC04 amazon nutella arama" time="19.031">
+        <system-out>
+            <![CDATA[Given kullanici amazon ana sayfasinda.......................................passed
+And kullanici Nutella icin arama yapar......................................passed
+Then sonuclarin Nutella icerdigini test eder................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US1002 Kullanici ortak adimlari Background ile calistirir" name="TC05 amazon java arama" time="16.055">
+        <system-out>
+            <![CDATA[Given kullanici amazon ana sayfasinda.......................................passed
+And kullanici Java icin arama yapar.........................................passed
+Then sonuclarin Java icerdigini test eder...................................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

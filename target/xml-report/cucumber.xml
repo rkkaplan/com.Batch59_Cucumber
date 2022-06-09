@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="16.206">
-    <testcase classname="US1003 kullanici parametre kullanarak arama yapabilmeli" name="TC06 kullanici parametre ile amazonda arama yapabilmeli" time="16.062">
-        <system-out>
-            <![CDATA[Given kullanici amazon ana sayfasinda.......................................passed
-And kullanici "Java" icin arama yapar.......................................passed
-And sonuclarin "Java" icerdigini test eder..................................passed
-Then sayfayi kapatir........................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="41.426">
+    <testcase classname="US1012 kullanici Register yapabilmeli" name="TC17 Kullanici uygun datalarla Register olabilmeli" time="41.154">
+        <failure message="Unable to find element with locator By.xpath: //input[@id='email_create']&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.3', revision: '7b1ebf28ef'&#10;System info: host: 'DESKTOP-75TLF51', ip: '192.168.2.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given kullanici "automationUrl" ana sayfasinda..............................passed
+And user sign in linkine tiklar.............................................passed
+And user Create and account bolumune email adresi girer.....................failed
+And Create an Account butonuna basar........................................skipped
+And user kisisel bilgilerini ve iletisim bilgilerini girer..................skipped
+And user Register butonuna basar............................................skipped
+Then hesap olustugunu dogrulayin............................................skipped
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.xpath: //input[@id='email_create']
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.3', revision: '7b1ebf28ef'
+System info: host: 'DESKTOP-75TLF51', ip: '192.168.2.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.13'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy23.sendKeys(Unknown Source)
+	at stepDefinitions.AutomationStepDefinitions.user_create_and_account_bolumune_email_adresi_girer(AutomationStepDefinitions.java:23)
+	at ✽.user Create and account bolumune email adresi girer(file:///C:/Users/RK/IdeaProjects/com.batch59_Cucumber/src/test/resources/features/US1012_AutomationPractice.feature:8)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>

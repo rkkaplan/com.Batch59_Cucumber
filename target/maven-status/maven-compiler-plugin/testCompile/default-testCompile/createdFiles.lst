@@ -9,6 +9,7 @@ utilities\Driver.class
 pages\HMCPage.class
 pages\junitNotlar.class
 stepDefinitions\Hooks.class
+runners\TestRunner2.class
 stepDefinitions\HerokuappStepDefinitions.class
 utilities\ConfigReader.class
 stepDefinitions\HMCStepDefinitions.class
